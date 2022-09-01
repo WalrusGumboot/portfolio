@@ -8,9 +8,11 @@ module.exports = {
   theme: {
     extend: {
       fontFamily: {
-        'manrope': ["Manrope", 'sans-serif']
+        'poppins': ["Poppins", 'sans-serif']
       }
     },
   },
-  plugins: [],
+  plugins: [
+    require('@tailwindcss/typography'),
+  ],
 }
