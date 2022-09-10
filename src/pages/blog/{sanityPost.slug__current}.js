@@ -55,9 +55,9 @@ const BlogPost = ( {data} ) => {
     <p className="text-slate-400 font-light text-sm">Published at {new Date(post.publishedAt).toDateString()}</p>
       <hr />
       <div className="my-3">
-        <GatsbyImage image={post.mainImage.asset.gatsbyImageData}/>
+        <GatsbyImage image={post.mainImage.asset.gatsbyImageData} className="min-w-full"/>
       </div>
-      <div className="prose prose-a:text-blue-600 prose-slate w-full">
+      <div className="prose prose-a:text-blue-600 prose-slate min-w-full">
         <PortableText value={post._rawBody} components={portableTextComponents}/>
       </div>
       <div className="h-3"/>
