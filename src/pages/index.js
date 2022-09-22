@@ -17,6 +17,8 @@ const IndexPage = () => {
 
           This site is a kind of repository of most of my stuff. My albums can be found on the <a href="music">Music</a> page,
           my blog posts and writings and pieces of poetry and whatnot can be found on my <a href="blog">Blog</a>.
+
+          Regarding socials, my Twitter can be found at <a href="https://www.twitter.com/simeondermaats">@simeondermaats</a>.
         </p>
       </div>
 

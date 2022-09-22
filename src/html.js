@@ -5,10 +5,9 @@ export default function HTML(props) {
   return (
     <html {...props.htmlAttributes}>
       <head>
-        <script src="https://kit.fontawesome.com/266060bdfa.js" crossOrigin="anonymous"></script>
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="" />
-        <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet" />
+        <link rel="stylesheet" href="https://raw.githubusercontent.com/pvinis/iosevka-webfont/master/7.0.2/iosevka.css" crossorigin="anonymous" referrerpolicy="no-referrer" />
         <meta charSet="utf-8" />
         <meta httpEquiv="x-ua-compatible" content="ie=edge" />
         <meta
