@@ -82,8 +82,16 @@ const AlbumPage = ( {data} ) => {
         <div className="bg-emerald-100 rounded-md p-8">
           <GatsbyImage image={album.cover.asset.gatsbyImageData}/>
           <div className="flex flex-row gap-x-4 mt-4">
-            <a href={album.spotifyLink} >Spotify</a>
-            <a href={album.bandcampLink}>Bandcamp</a>
+            <a href={album.spotifyLink}>
+              <div className="bg-emerald-200 hover:bg-emerald-400 hover:shadow-md rounded-md p-4 text-center transition-all">
+                spotify
+              </div>
+            </a>
+            <a href={album.bandcampLink}>
+              <div className="bg-emerald-200 hover:bg-emerald-400 hover:shadow-md rounded-md p-4 text-center transition-all">
+                bandcamp
+              </div>
+            </a>
           </div>
         </div>
       </div>
