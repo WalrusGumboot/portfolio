@@ -13,6 +13,9 @@ query Filter($id: String) {
       author {
         name
       }
+      categories {
+        title
+      }
       slug {
         current
       }
@@ -62,8 +65,15 @@ const BlogPost = ( {data} ) => {
       </div>
       <div className="h-3"/>
       <hr />
-      <h3 className="text-blue-600 font-bold text-md">Categories</h3>
-
+      <h3 className="text-blue-600 font-bold text-md my-4">Categories</h3>
+      <div className="flex flex-row gap-x-4">
+        {post.categories.map(c => (
+          <div className="rounded-full bg-emerald-200 px-2">
+            <p>{c.title}</p>
+          </div>
+        ))}
+      </div>
+      
 
     </Frame>
   )
