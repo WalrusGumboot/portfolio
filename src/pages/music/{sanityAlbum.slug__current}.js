@@ -63,7 +63,7 @@ const AlbumPage = ( {data} ) => {
 
           {
             album.songs.map((song) => (
-              <div className="w-full bg-white rounded-md p-4 flex flex-row gap-x-6 mb-4">
+              <div className="w-full bg-white rounded-md p-4 flex flex-row gap-x-4 items-center mb-4">
                 <p className="grow">{song.title}</p>
                 <a href={song.spotifyLink}>
                   <div className="bg-emerald-200 hover:bg-emerald-400 hover:shadow-md rounded-md p-4 text-center transition-all">
