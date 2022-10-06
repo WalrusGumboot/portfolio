@@ -14,7 +14,7 @@ query CategoryQuery {
 `
 
 const CategoriesPage = ( {data} ) => {
-    const categories = data.allCategory.nodes;
+    const categories = data.allSanityCategory.nodes;
 
     return (
         <Frame>
