@@ -14,4 +14,4 @@ const CategoryPage = ( ) => {
     )
   }
   
-  export default BlogPost
+  export default CategoryPage
