@@ -5,7 +5,7 @@ export default function HTML(props) {
   return (
     <html {...props.htmlAttributes}>
       <head>
-        <link rel="stylesheet" href="https://pvinis.github.io/iosevka-webfont/7.0.2/iosevka.css" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link rel="stylesheet" href="https://pvinis.github.io/iosevka-webfont/7.0.2/iosevka.css" crossOrigin="anonymous" referrerPolicy="no-referrer" />
         <meta charSet="utf-8" />
         <meta httpEquiv="x-ua-compatible" content="ie=edge" />
         <meta

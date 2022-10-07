@@ -1,5 +1,5 @@
 import * as React from "react";
-import { graphql } from "gatsby"
+import { graphql, navigate } from "gatsby"
 import Frame from "../../components/frame"
 
 export const query = graphql `
