@@ -1,10 +1,10 @@
-import { graphql } from "gatsby"
+import { graphql, navigate } from "gatsby"
 import * as React from "react"
 import Frame from "../../components/frame"
 
 export const query = graphql `
-query MyQuery($cat: String) {
-  allSanityPost(filter: {categories: {elemMatch: {title: {eq: $cat}}}}) {
+query MyQuery($eq: String!) {
+  allSanityPost(filter: {categories: {elemMatch: {title: {eq: $eq}}}}) {
     nodes {
       title
       slug {
@@ -18,10 +18,16 @@ query MyQuery($cat: String) {
 const CategoryPage = ( {data} ) => {
     const pages = data.allSanityPost.nodes; // has a title and slug.current property
     return (
-      <Frame pageTitle="hoi">
-        <div>hoi</div>
-        
-  
+      <Frame pageTitle={"All posts tagged with \"" + window.location.href.split('/').pop() + "\""}>
+        <div className="flex flex-col gap-y-4">
+          {
+            pages.map((p) => (
+              <div className="w-full p-4 bg-blue-100 rounded-md hover:shadow-md transition-all hover:cursor-pointer" onClick={()=>navigate("/blog/"+p.slug.current)}>
+                <h3 className="text-2xl">{p.title}</h3>
+              </div>
+            ))
+          }
+        </div>
       </Frame>
     )
   }
