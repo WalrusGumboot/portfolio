@@ -18,6 +18,7 @@ const Frame = ( { pageTitle, children } ) => {
             <NavItem route="/"      linkText="Home"/>
             <NavItem route="/music" linkText="Music"/>
             <NavItem route="/blog"  linkText="Blog"/>
+          <NavItem route="/stuffILike" linkText="Stuff I like"/>
             <NavItem route="https://us21.list-manage.com/contact-form?u=5d94806c3a1f74529e81a0f6a&form_id=dd43a125c2aed2ae5eb5fd5b2513a24d" linkText="Contact"/>
         </div>
       </div>

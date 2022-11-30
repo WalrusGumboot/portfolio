@@ -18,8 +18,8 @@ const IndexPage = () => {
           This site is a kind of repository of most of my stuff. My albums can be found on the <a href="music">Music</a> page,
           my blog posts and writings and pieces of poetry and whatnot can be found on my <a href="blog">Blog</a>.
 
-          My Twitter can be found at <a href="https://www.twitter.com/simeondermaats">@simeondermaats</a>
-          and my GitHub under the handle <a href="https://github.com/WalrusGumboot">WalrusGumboot</a>.
+          My Twitter can be found at <a href="https://www.twitter.com/simeondermaats">@simeondermaats</a> and
+          my GitHub under the handle <a href="https://github.com/WalrusGumboot">WalrusGumboot</a>.
         </p>
       </div>
 
