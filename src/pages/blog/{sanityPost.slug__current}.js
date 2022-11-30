@@ -68,7 +68,7 @@ const BlogPost = ( {data} ) => {
       <h3 className="text-blue-600 font-bold text-md my-4">Categories</h3>
       <div className="flex flex-row gap-x-4">
         {post.categories.map(c => (
-          <div className="rounded-full bg-emerald-200 px-2 hover:cursor-pointer" onClick={() => navigate("/blog/categories/"+c.title)} role="link">
+          <div className="rounded-full bg-emerald-200 px-2">
             <p>{c.title}</p>
           </div>
         ))}
