@@ -1,9 +1,9 @@
 import { graphql, navigate } from "gatsby"
 import * as React from "react"
-import Frame from "../../components/frame"
+import Frame from "../../../components/frame"
 
 export const query = graphql `
-query MyQuery($eq: String!) {
+query ($eq: String) {
   allSanityPost(filter: {categories: {elemMatch: {title: {eq: $eq}}}}) {
     nodes {
       title
@@ -16,7 +16,8 @@ query MyQuery($eq: String!) {
 `
 
 const CategoryPage = ( {data} ) => {
-    const pages = data.allSanityPost.nodes; // has a title and slug.current property
+  console.log(data)
+  const pages = data.allSanityPost.nodes; // has a title and slug.current property
     return (
       <Frame pageTitle={"All posts tagged with \"" + window.location.href.split('/').pop() + "\""}>
         <div className="flex flex-col gap-y-4">
